@@ -1,6 +1,13 @@
+#
+# Salt top.sls file
+# Base
 base:
-  '*':
-    - nginx
-    - git
-    - python-pip
-    - app-install
+    '*':
+        - default
+        - git
+        - nginx
+        - app-install
+        - supervisor
+        - gunicorn
+        - python-flask
+        - webapp

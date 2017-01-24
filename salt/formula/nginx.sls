@@ -3,3 +3,5 @@ nginx:
     - installed
   service:
     - running
+    - watch:
+      - file: /etc/nginx/sites-enabled/default
