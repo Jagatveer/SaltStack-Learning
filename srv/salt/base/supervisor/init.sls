@@ -17,4 +17,4 @@ supervisor.service:
         - mode: 644
 scriptrun:
   cmd.run:
-    - name: /usr/local/bin/supervisorctl reread && /usr/local/bin/supervisorctl update
+    - name: /usr/bin/supervisorctl reread && /usr/bin/supervisorctl update
